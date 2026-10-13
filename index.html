@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acacia Engineering | Solar Solutions in Jaipur</title>
+    <meta
+      name="description"
+      content="Solar panel design, installation and maintenance in Jaipur, Rajasthan. Sunlight to Solutions."
+    />
+    <meta name="theme-color" content="#1c3326" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --green: #1c3326;
+        --green2: #274635;
+        --gold: #b98a14;
+        --gold-l: #d4a21c;
+        --cream: #fdfcf7;
+        --sand: #f3efe0;
+        --ink: #26332c;
+        --muted: #5d6b63;
+        --line: #ddd6bd;
+        --serif: "Cormorant Garamond", Georgia, serif;
+        --sans: "Jost", system-ui, sans-serif;
+        --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+      body {
+        margin: 0;
+        font: 400 1.05rem/1.7 var(--sans);
+        color: var(--ink);
+        background: var(--cream);
+      }
+      img {
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+      }
+      :focus-visible {
+        outline: 2px solid var(--gold-l);
+        outline-offset: 3px;
+      }
+      .wrap {
+        max-width: 1140px;
+        margin: auto;
+        padding: 0 6%;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--serif);
+        color: var(--green);
+        line-height: 1.08;
+        margin: 0;
+      }
+      h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 600;
+        max-width: 16ch;
+      }
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      section {
+        padding: 96px 0;
+      }
+      svg.i {
+        width: 26px;
+        height: 26px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      /* header */
+      header {
+        position: fixed;
+        inset: 0 0 auto 0;
+        z-index: 10;
+        transition:
+          background 0.3s,
+          box-shadow 0.3s;
+      }
+      header.solid {
+        background: rgba(253, 252, 247, 0.88);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 1px 0 var(--line);
+      }
+      .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 76px;
+      }
+      .bar img {
+        height: 52px;
+        width: auto;
+        display: block;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      nav a {
+        text-decoration: none;
+        font-size: 0.95rem;
+        position: relative;
+        padding: 4px 0;
+      }
+      nav a:not(.btn)::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: var(--gold);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s var(--ease);
+      }
+      nav a:not(.btn):hover::after {
+        transform: scaleX(1);
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--green);
+        color: var(--cream);
+        padding: 13px 26px;
+        border-radius: 999px;
+        border: 0;
+        font: 500 0.98rem var(--sans);
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          background 0.25s,
+          transform 0.25s var(--ease);
+      }
+      .btn:hover {
+        background: var(--gold);
+        transform: translateY(-2px);
+      }
+      .btn.ghost {
+        background: transparent;
+        color: var(--green);
+        box-shadow: inset 0 0 0 1px var(--green);
+      }
+      .btn.ghost:hover {
+        background: var(--green);
+        color: var(--cream);
+      }
+      .menu {
+        display: none;
+        background: none;
+        border: 0;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        color: var(--green);
+      }
+
+      /* hero */
+      #hero {
+        padding: 150px 0 70px;
+        overflow: hidden;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 40px;
+        align-items: center;
+      }
+      #hero h1 {
+        font-size: clamp(2.8rem, 6.2vw, 5.2rem);
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+      #hero p {
+        max-width: 46ch;
+        color: var(--muted);
+        font-size: 1.15rem;
+        margin: 24px 0 36px;
+      }
+      .cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      .in {
+        opacity: 0;
+        transform: translateY(18px);
+        animation: in 0.9s var(--ease) forwards;
+        animation-delay: calc(var(--d, 0) * 140ms + 200ms);
+      }
+      @keyframes in {
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      .art {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .art .sun {
+        transform-origin: 50% 100%;
+        animation: rise 2.2s var(--ease) 0.3s both;
+      }
+      @keyframes rise {
+        from {
+          transform: translateY(120px);
+          opacity: 0;
+        }
+        to {
+          transform: none;
+          opacity: 1;
+        }
+      }
+      .art .ray {
+        stroke-dasharray: 90;
+        stroke-dashoffset: 90;
+        animation: draw 1s var(--ease) forwards;
+        animation-delay: calc(1.6s + var(--r) * 90ms);
+      }
+      @keyframes draw {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      .art .glow {
+        animation: pulse 5s ease-in-out 3s infinite;
+      }
+      @keyframes pulse {
+        50% {
+          transform: scale(1.04);
+          opacity: 0.8;
+        }
+      }
+      .art .glow,
+      .art .sun {
+        transform-box: fill-box;
+      }
+      .art .stem {
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: draw 2s var(--ease) 1s forwards;
+      }
+      .art .bud {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: pop 0.6s var(--ease) both;
+        animation-delay: calc(2s + var(--b) * 160ms);
+      }
+      @keyframes pop {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      /* stats */
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .stat {
+        padding: 30px 24px;
+        border-left: 1px solid var(--line);
+      }
+      .stat:first-child {
+        border-left: 0;
+        padding-left: 0;
+      }
+      .stat b {
+        display: block;
+        font: 600 clamp(2rem, 4vw, 3rem)/1 var(--serif);
+        color: var(--green);
+      }
+      .stat span {
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+
+      /* about */
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: start;
+      }
+      .about p {
+        color: var(--muted);
+        margin: 0 0 24px;
+      }
+      .ticks {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 14px;
+      }
+      .ticks li {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .ticks svg {
+        flex: none;
+        width: 22px;
+        height: 22px;
+        margin-top: 3px;
+        color: var(--gold);
+      }
+
+      /* services */
+      #services {
+        background: var(--sand);
+      }
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 30px;
+        margin-bottom: 48px;
+      }
+      .rows {
+        border-top: 1px solid var(--green);
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 64px 1fr 1.3fr;
+        gap: 28px;
+        align-items: center;
+        padding: 30px 0;
+        border-bottom: 1px solid var(--line);
+        position: relative;
+      }
+      .row::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 2px;
+        width: 100%;
+        background: var(--gold);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s var(--ease);
+      }
+      .row:hover::before {
+        transform: scaleX(1);
+      }
+      .ico {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: var(--green);
+        box-shadow: inset 0 0 0 1px var(--green);
+        transition:
+          background 0.3s,
+          color 0.3s,
+          transform 0.4s var(--ease);
+      }
+      .row:hover .ico {
+        background: var(--green);
+        color: var(--gold-l);
+        transform: rotate(-8deg) scale(1.06);
+      }
+      .row p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      /* process */
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px;
+        position: relative;
+        margin-top: 56px;
+      }
+      .steps::before {
+        content: "";
+        position: absolute;
+        top: 21px;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: var(--gold);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 1.6s var(--ease);
+      }
+      .steps.go::before {
+        transform: scaleX(1);
+      }
+      .dot {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--cream);
+        box-shadow: inset 0 0 0 1px var(--gold);
+        display: grid;
+        place-items: center;
+        font: 600 1.2rem var(--serif);
+        color: var(--green);
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .step p {
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 0.98rem;
+      }
+
+      /* projects */
+      #projects {
+        background: var(--green);
+        color: var(--cream);
+      }
+      #projects h2 {
+        color: var(--cream);
+      }
+      .proj {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        margin-top: 48px;
+        border-top: 1px solid rgba(253, 252, 247, 0.25);
+      }
+      .p {
+        padding: 36px 28px 36px 0;
+        border-right: 1px solid rgba(253, 252, 247, 0.25);
+        padding-left: 28px;
+      }
+      .p:first-child {
+        padding-left: 0;
+      }
+      .p:last-child {
+        border-right: 0;
+      }
+      .p b {
+        display: block;
+        font: 600 clamp(3rem, 6vw, 4.8rem)/1 var(--serif);
+        color: var(--gold-l);
+        transition: transform 0.5s var(--ease);
+      }
+      .p:hover b {
+        transform: translateX(8px);
+      }
+      .p h3 {
+        color: var(--cream);
+        margin: 14px 0 4px;
+        font-size: 1.35rem;
+      }
+      .p span {
+        color: #b9c6bd;
+        font-size: 0.95rem;
+      }
+
+      /* contact */
+      .contact {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 72px;
+      }
+      .info {
+        list-style: none;
+        padding: 0;
+        margin: 32px 0 0;
+        display: grid;
+        gap: 20px;
+      }
+      .info li {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+      .info .ico {
+        width: 48px;
+        height: 48px;
+        flex: none;
+      }
+      .info a {
+        text-decoration: none;
+      }
+      .info a:hover {
+        color: var(--gold);
+      }
+      form {
+        display: grid;
+        gap: 22px;
+      }
+      .f {
+        position: relative;
+      }
+      .f input,
+      .f textarea {
+        width: 100%;
+        padding: 22px 0 8px;
+        border: 0;
+        border-bottom: 1px solid var(--green);
+        background: transparent;
+        font: inherit;
+        color: var(--ink);
+        border-radius: 0;
+      }
+      .f textarea {
+        resize: vertical;
+        min-height: 110px;
+      }
+      .f label {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        color: var(--muted);
+        pointer-events: none;
+        transition: all 0.25s var(--ease);
+      }
+      .f input:focus + label,
+      .f textarea:focus + label,
+      .f input:not(:placeholder-shown) + label,
+      .f textarea:not(:placeholder-shown) + label {
+        top: 0;
+        font-size: 0.78rem;
+        color: var(--gold);
+      }
+      .f input:focus,
+      .f textarea:focus {
+        outline: 0;
+        border-bottom-color: var(--gold-l);
+        box-shadow: 0 1px 0 var(--gold-l);
+      }
+      .two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .hp {
+        position: absolute;
+        left: -9999px;
+      }
+      #status {
+        min-height: 1.6em;
+        font-size: 0.98rem;
+      }
+      #status.ok {
+        color: #2c6a43;
+        animation: in 0.5s var(--ease);
+      }
+      #status.err {
+        color: #a33b2f;
+      }
+      .btn[disabled] {
+        opacity: 0.7;
+        cursor: wait;
+      }
+      .spin {
+        width: 16px;
+        height: 16px;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-top-color: #fff;
+        border-radius: 50%;
+        animation: s 0.7s linear infinite;
+        display: none;
+      }
+      .btn[disabled] .spin {
+        display: inline-block;
+      }
+      @keyframes s {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      footer {
+        background: var(--green);
+        color: #b9c6bd;
+        padding: 40px 0;
+        font-size: 0.92rem;
+      }
+      .foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .foot img {
+        height: 44px;
+        border-radius: 8px;
+      }
+
+      @media (max-width: 860px) {
+        section {
+          padding: 72px 0;
+        }
+        .menu {
+          display: block;
+        }
+        nav {
+          position: fixed;
+          inset: 76px 0 auto 0;
+          background: var(--cream);
+          flex-direction: column;
+          padding: 24px 6% 32px;
+          gap: 20px;
+          align-items: flex-start;
+          border-bottom: 1px solid var(--line);
+          transform: translateY(-130%);
+          transition: transform 0.4s var(--ease);
+        }
+        nav.open {
+          transform: none;
+        }
+        .hero-grid,
+        .about,
+        .contact {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        #hero {
+          padding-top: 120px;
+        }
+        .art {
+          max-width: 420px;
+          margin: auto;
+        }
+        .stats {
+          grid-template-columns: 1fr 1fr;
+        }
+        .stat:nth-child(3) {
+          border-left: 0;
+          padding-left: 0;
+        }
+        .stat:nth-child(n + 3) {
+          border-top: 1px solid var(--line);
+        }
+        .row {
+          grid-template-columns: 56px 1fr;
+          gap: 6px 20px;
+        }
+        .row p {
+          grid-column: 2;
+        }
+        .steps {
+          grid-template-columns: 1fr 1fr;
+          gap: 36px 24px;
+        }
+        .steps::before {
+          display: none;
+        }
+        .proj {
+          grid-template-columns: 1fr;
+        }
+        .p {
+          border-right: 0;
+          border-bottom: 1px solid rgba(253, 252, 247, 0.25);
+          padding: 28px 0;
+        }
+        .p:last-child {
+          border-bottom: 0;
+        }
+        .two {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+        .in {
+          opacity: 1;
+          transform: none;
+        }
+        .art .ray,
+        .art .stem {
+          stroke-dashoffset: 0;
+        }
+        .steps::before {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="hdr">
+      <div class="wrap bar">
+        <a href="#hero" aria-label="Acacia Engineering home"
+          ><img src="logo.png" alt="Acacia Engineering"
+        /></a>
+        <button
+          class="menu"
+          id="menu"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg class="i" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16" /></svg>
+        </button>
+        <nav id="nav"></nav>
+      </div>
+    </header>
+    <main id="app"></main>
+    <footer><div class="wrap foot" id="foot"></div></footer>
+
+    <script>
+      const WEB3FORMS_KEY = "256cba54-1b50-4651-88a6-61277aab19a9"; // free key from web3forms.com
+
+      const ICON = {
+        home: '<path d="M3 11.5 12 4l9 7.5M5.5 10v9.5h13V10M10 19.5v-5h4v5"/>',
+        factory:
+          '<path d="M3 20V9l6 3.5V9l6 3.5V5h3l3 1.5V20zM7 20v-3M12 20v-3M17 20v-3"/>',
+        wrench:
+          '<path d="M14.5 6.5a4 4 0 0 0 4.9 4.9L20 12l-8 8a2.1 2.1 0 0 1-3-3l8-8zM8.5 16.5l.01 0"/>',
+        gauge: '<path d="M4 17a8 8 0 1 1 16 0M12 17l4-5M7 17h.01M17 17h.01"/>',
+        pin: '<path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11zM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>',
+        phone:
+          '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/>',
+        mail: '<path d="M3 6h18v12H3zM3 7l9 6.5L21 7"/>',
+        check: '<path d="M4 12.5 9.5 18 20 6.5"/>',
+        arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+      };
+      const ic = (n) =>
+        `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICON[n] || ""}</svg>`;
+      const esc = (s) =>
+        String(s).replace(
+          /[&<>"]/g,
+          (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c],
+        );
+
+      fetch("content.json")
+        .then((r) => r.json())
+        .then(build)
+        .catch((e) => {
+          document.getElementById("app").innerHTML =
+            '<p class="wrap" style="padding-top:140px">Could not load content.json. Open the site through a web server, not by double-clicking the file.</p>';
+          console.error(e);
+        });
+
+      const rays = [
+        [300, 140, 330, 70],
+        [360, 120, 390, 40],
+        [430, 125, 470, 50],
+        [490, 160, 540, 100],
+        [510, 215, 575, 185],
+      ];
+      const art = `<svg class="art" viewBox="0 0 600 560" role="img" aria-label="Sun rising over a hill with acacia blossoms">
+ <circle class="glow" cx="360" cy="330" r="150" fill="#d4a21c" opacity=".12"/>
+ <g class="sun"><circle cx="360" cy="330" r="96" fill="#d4a21c"/><circle cx="360" cy="330" r="96" fill="none" stroke="#b98a14" stroke-width="1.5" transform="scale(1.18)" transform-origin="360 330" opacity=".6"/></g>
+ ${rays.map((r, i) => `<line class="ray" style="--r:${i}" x1="${r[0]}" y1="${r[1] + 60}" x2="${r[2]}" y2="${r[3] + 60}" stroke="#b98a14" stroke-width="2" stroke-linecap="round"/>`).join("")}
+ <path d="M20 470C140 400 260 360 420 400c70 18 120 40 170 70V560H20z" fill="#1c3326"/>
+ <path d="M20 470C140 400 260 360 420 400c70 18 120 40 170 70" fill="none" stroke="#d4a21c" stroke-width="2.5"/>
+ <path class="stem" d="M110 470C112 400 130 340 175 280M135 380c20-30 50-50 85-70M155 330c-10-30-5-60 10-90" fill="none" stroke="#1c3326" stroke-width="3" stroke-linecap="round"/>
+ ${[
+   [175, 274, 20],
+   [220, 306, 15],
+   [165, 238, 17],
+   [128, 372, 13],
+   [205, 262, 11],
+ ]
+   .map(
+     (b, i) =>
+       `<circle class="bud" style="--b:${i}" cx="${b[0]}" cy="${b[1]}" r="${b[2]}" fill="#d4a21c"/>`,
+   )
+   .join("")}
+</svg>`;
+
+      function build(d) {
+        const c = d.company;
+        document.title = `${c.name} | ${c.tagline}`;
+        const S = [
+          {
+            id: "hero",
+            html: `<div class="wrap hero-grid"><div>
+     <h1 class="in" style="--d:0">${esc(d.hero.title)}</h1>
+     <p class="in" style="--d:1">${esc(d.hero.subtitle)}</p>
+     <div class="cta in" style="--d:2"><a class="btn" href="#contact">${esc(d.hero.cta)} ${ic("arrow")}</a><a class="btn ghost" href="#services">${esc(d.hero.cta2)}</a></div></div>
+     <div>${art}</div></div>
+     <div class="wrap" style="margin-top:56px"><div class="stats">${d.stats.map((s) => `<div class="stat"><b data-to="${s.value}" data-suf="${esc(s.suffix)}">0${esc(s.suffix)}</b><span>${esc(s.label)}</span></div>`).join("")}</div></div>`,
+          },
+          {
+            id: "about",
+            nav: "About",
+            html: `<div class="wrap about"><h2>${esc(d.about.title)}</h2><div><p>${esc(d.about.text)}</p><ul class="ticks">${d.about.points.map((p) => `<li>${ic("check")}<span>${esc(p)}</span></li>`).join("")}</ul></div></div>`,
+          },
+          {
+            id: "services",
+            nav: "Services",
+            html: `<div class="wrap"><div class="head"><h2>${esc(d.services.title)}</h2></div><div class="rows">${d.services.items.map((i) => `<div class="row"><div class="ico">${ic(i.icon)}</div><h3>${esc(i.name)}</h3><p>${esc(i.desc)}</p></div>`).join("")}</div></div>`,
+          },
+          {
+            id: "process",
+            nav: "Process",
+            html: `<div class="wrap"><h2>${esc(d.process.title)}</h2><div class="steps" id="steps">${d.process.items.map((s, i) => `<div class="step"><div class="dot">${i + 1}</div><h3>${esc(s.name)}</h3><p>${esc(s.desc)}</p></div>`).join("")}</div></div>`,
+          },
+          {
+            id: "projects",
+            nav: "Projects",
+            html: `<div class="wrap"><h2>${esc(d.projects.title)}</h2><div class="proj">${d.projects.items.map((p) => `<div class="p"><b>${esc(p.size)}</b><h3>${esc(p.name)}</h3><span>${esc(p.detail)}</span></div>`).join("")}</div></div>`,
+          },
+          {
+            id: "contact",
+            nav: "Contact",
+            html: `<div class="wrap contact"><div><h2>Tell us about your roof.</h2>
+     <ul class="info"><li><span class="ico">${ic("pin")}</span><span>${esc(c.location)}</span></li>
+     <li><span class="ico">${ic("phone")}</span><a href="tel:${esc(c.phone.replace(/\s/g, ""))}">${esc(c.phone)}</a></li>
+     <li><span class="ico">${ic("mail")}</span><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></li></ul></div>
+     <form id="form" novalidate>
+      <div class="two"><div class="f"><input id="n" name="name" placeholder=" " required autocomplete="name"><label for="n">Your name</label></div>
+      <div class="f"><input id="p" name="phone" placeholder=" " autocomplete="tel"><label for="p">Phone</label></div></div>
+      <div class="f"><input id="e" name="email" type="email" placeholder=" " required autocomplete="email"><label for="e">Email</label></div>
+      <div class="f"><textarea id="m" name="message" placeholder=" " required></textarea><label for="m">What would you like to power?</label></div>
+      <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div><button class="btn" type="submit"><span class="spin"></span><span id="bt">Send enquiry</span></button></div>
+      <div id="status" role="status" aria-live="polite"></div></form></div>`,
+          },
+        ];
+        const app = document.getElementById("app");
+        S.forEach((s) => {
+          const el = document.createElement("section");
+          el.id = s.id;
+          el.innerHTML = s.html;
+          app.appendChild(el);
+        });
+        document.getElementById("nav").innerHTML =
+          S.filter((s) => s.nav && s.id !== "contact")
+            .map((s) => `<a href="#${s.id}">${s.nav}</a>`)
+            .join("") + `<a class="btn" href="#contact">Contact us</a>`;
+        document.getElementById("foot").innerHTML =
+          `<img src="mark.png" alt=""><span>© ${new Date().getFullYear()} ${esc(c.name)}, ${esc(c.location)}</span><span>${esc(c.tagline)}</span>`;
+        wire();
+      }
+
+      function wire() {
+        const hdr = document.getElementById("hdr"),
+          nav = document.getElementById("nav"),
+          menu = document.getElementById("menu");
+        const onS = () => hdr.classList.toggle("solid", scrollY > 20);
+        onS();
+        addEventListener("scroll", onS, { passive: true });
+        menu.onclick = () => {
+          const o = nav.classList.toggle("open");
+          menu.setAttribute("aria-expanded", o);
+        };
+        nav.addEventListener("click", (e) => {
+          if (e.target.closest("a")) nav.classList.remove("open");
+        });
+
+        // count-up stats once visible
+        const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const io = new IntersectionObserver(
+          (es) =>
+            es.forEach((en) => {
+              if (!en.isIntersecting) return;
+              io.unobserve(en.target);
+              if (en.target.id === "steps") {
+                en.target.classList.add("go");
+                return;
+              }
+              const el = en.target,
+                to = +el.dataset.to,
+                suf = el.dataset.suf;
+              if (reduce) {
+                el.textContent = to + suf;
+                return;
+              }
+              const t0 = performance.now();
+              (function f(t) {
+                const p = Math.min((t - t0) / 1400, 1);
+                el.textContent =
+                  Math.round(to * (1 - Math.pow(1 - p, 3))) + suf;
+                if (p < 1) requestAnimationFrame(f);
+              })(t0);
+            }),
+          { threshold: 0.6 },
+        );
+        document.querySelectorAll("[data-to]").forEach((e) => io.observe(e));
+        io.observe(document.getElementById("steps"));
+        document.getElementById("form").addEventListener("submit", send);
+      }
+
+      async function send(e) {
+        e.preventDefault();
+        const f = e.target,
+          st = document.getElementById("status"),
+          b = f.querySelector("button"),
+          bt = document.getElementById("bt");
+        st.className = "";
+        if (
+          !f.name.value.trim() ||
+          !f.email.checkValidity() ||
+          !f.email.value ||
+          !f.message.value.trim()
+        ) {
+          st.className = "err";
+          st.textContent =
+            "Please add your name, a valid email and a short message.";
+          return;
+        }
+        const data = Object.fromEntries(new FormData(f));
+        data.access_key = WEB3FORMS_KEY;
+        data.subject = "New enquiry from acaciaengineering.in";
+        b.disabled = true;
+        bt.textContent = "Sending";
+        try {
+          const r = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+          const j = await r.json();
+          if (j.success) {
+            st.className = "ok";
+            st.textContent =
+              "Thank you. We have your enquiry and will call you within one working day.";
+            f.reset();
+          } else {
+            st.className = "err";
+            st.textContent =
+              "The message did not send. Please email us directly.";
+          }
+        } catch (_) {
+          st.className = "err";
+          st.textContent =
+            "No connection. Please check your internet and try again.";
+        }
+        b.disabled = false;
+        bt.textContent = "Send enquiry";
+      }
+    </script>
+  </body>
+</html>
