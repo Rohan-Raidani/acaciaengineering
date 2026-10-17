@@ -1,0 +1,27 @@
+/* additions.css | styles for the pieces added on top of the original home page:
+   the estimator section (#estimate) and the "view all projects" button.
+   Loaded last on index.html so it can sit on top of the older files. */
+
+/* ---------- Estimator ---------- */
+.est{position:relative;isolation:isolate;overflow:hidden;color:var(--cream);background:var(--green) radial-gradient(circle at 100% 0,rgba(212,162,28,.28),transparent 50%)}
+.est .eyebrow{color:var(--gold-l)}
+.est h2{color:#fff;max-width:18ch}
+.est-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.est-sub{margin:20px 0 0;max-width:42ch;color:#cdd8d0}
+.est-box{border:1px solid rgba(255,255,255,.22);border-radius:20px;background:rgba(255,255,255,.08);backdrop-filter:blur(14px);padding:34px}
+.est-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:14px}
+.est-top label{font-weight:500}
+.est-top output{font:600 2rem/1 var(--serif);color:var(--gold-l)}
+.est input[type=range]{width:100%;height:28px;accent-color:var(--gold-l);cursor:pointer}
+.est-res{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.est-res div{background:rgba(0,0,0,.25);border-radius:12px;padding:20px}
+.est-res b{display:block;font:600 clamp(1.9rem,3vw,2.4rem)/1.05 var(--serif);white-space:nowrap;color:#fff;margin-bottom:6px}
+.est-res span{font-size:.9rem;color:#cdd8d0}
+.est-note{margin:18px 0 22px;font-size:.85rem;color:#aebdb3}
+@media (max-width:860px){.est-grid{grid-template-columns:1fr;gap:40px}.est-box{padding:26px}}
+@media (max-width:480px){.est-res{grid-template-columns:1fr}}
+
+/* ---------- Home "projects" teaser: button sits on green ---------- */
+#projects .ind-foot{margin:44px 0 0}
+#projects .btn{background:var(--gold-l);color:var(--green)}
+#projects .btn:hover{background:#fff}

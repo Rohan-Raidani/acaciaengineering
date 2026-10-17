@@ -1,0 +1,142 @@
+  /* ---- industries: wave edge, tint, parallax ---- */
+  #industries {
+    padding: 200px 0 96px;
+    overflow: hidden;
+  }
+  #industries .bgimg {
+    inset: -20% 0;
+  }
+  #industries .bgimg img {
+    will-change: transform;
+  }
+  #industries .bgimg::after {
+    background: linear-gradient(
+      180deg,
+      rgba(22, 64, 52, 0.8),
+      rgba(26, 66, 54, 0.62) 40%,
+      rgba(18, 46, 36, 0.88)
+    );
+  }
+  .wave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1px;
+    height: 130px;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .wave svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    /*animation: wv 30s linear infinite;*/
+    animation: none !important;
+  }
+  .wave svg + svg {
+    animation-duration: 20s;
+    animation-direction: reverse;
+  }
+  @keyframes wv {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .head.center {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .head.center h2 {
+    max-width: none;
+  }
+  .head.center .sub {
+    max-width: 62ch;
+    font-size: 1.1rem;
+  }
+  #industries .eyebrow {
+    color: var(--gold-l);
+  }
+  @media (max-width: 860px) {
+    #industries {
+      padding: 130px 0 72px;
+    }
+    .wave {
+      height: 80px;
+    }
+  }
+  .hero-bg {
+    inset: 0 0 -22% 0;
+  }
+  /* CSS parallax (background-attachment: fixed), same method as the W3Schools example */
+  #industries .bgimg {
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--green2);
+  }
+  @media (hover: none), (max-width: 860px) {
+    #industries .bgimg {
+      background-attachment: scroll;
+    }
+  }
+  #industries {
+    padding: 210px 0 220px;
+  }
+  .wave {
+    height: 150px;
+  }
+  .wave.bot {
+    top: auto;
+    bottom: -1px;
+    transform: scaleY(-1);
+  }
+  .wave svg:nth-child(1) {
+    animation-duration: 42s;
+  }
+  .wave svg:nth-child(2) {
+    animation-duration: 30s;
+    animation-direction: reverse;
+  }
+  .wave svg:nth-child(3) {
+    animation-duration: 22s;
+  }
+  .wave svg:nth-child(4) {
+    animation-duration: 34s;
+    animation-direction: reverse;
+  }
+  @media (max-width: 860px) {
+    #industries {
+      padding: 140px 0 150px;
+    }
+    .wave {
+      height: 90px;
+    }
+  }
+  /* waves keep drifting even when the OS asks for reduced motion (gentle, low-contrast) */
+  @media (prefers-reduced-motion: reduce) {
+    .wave svg:nth-child(1) {
+      animation: wv 42s linear infinite !important;
+    }
+    .wave svg:nth-child(2) {
+      animation: wv 30s linear infinite reverse !important;
+    }
+    .wave svg:nth-child(3) {
+      animation: wv 22s linear infinite !important;
+    }
+    .wave svg:nth-child(4) {
+      animation: wv 34s linear infinite reverse !important;
+    }
+  }
+  /* Float Project Type label only when focused or selected */
+  .f select:focus + label,
+  .f select.has-value + label {
+    top: 0;
+    font-size: 0.78rem;
+    color: var(--gold);
+  }
