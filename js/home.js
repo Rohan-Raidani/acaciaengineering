@@ -92,4 +92,14 @@
     reveal();
     parallax();
     loadBg();
+
+    // If the page was opened with a hash (e.g., index.html#contact), ensure we scroll
+    // to the target after the dynamic sections are built. Small timeout lets layout settle.
+    if (location.hash) {
+      const id = location.hash.slice(1);
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 50);
+    }
   }
