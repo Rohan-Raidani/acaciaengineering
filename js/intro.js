@@ -5,7 +5,7 @@
   const CFG = {
     tagline: "Sunlight to Solutions",
     highlight: "Solutions", // word shown in gold
-    sub: "Solar engineering · Jaipur, Rajasthan",
+    sub: "Solar engineering · Worldwide projects",
     mark: "assets/img/mark.png",
     oncePerSession: true, // replays once per tab; add ?intro to the URL to force it
     loaderMs: 2800,

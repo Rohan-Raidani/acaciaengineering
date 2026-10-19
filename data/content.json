@@ -1,449 +1,422 @@
 {
- "company": {
-  "name": "Acacia Engineering",
-  "tagline": "Sunlight to Solutions",
-  "location": "Jaipur, Rajasthan",
-  "address": "Add full office address here, Jaipur, Rajasthan",
-  "email": "info@acaciaengineering.in",
-  "phone": "+91 00000 00000"
- },
- "hero": {
-  "title": "Rajasthan's sun, working for your roof.",
-  "subtitle": "We design, install and maintain solar systems for homes, shops and factories across Jaipur, and we stay around after the panels go up.",
-  "cta": "Get a free site survey",
-  "cta2": "See our services",
-  "image": "https://images.pexels.com/photos/6876536/pexels-photo-6876536.jpeg?auto=compress&cs=tinysrgb&w=1920",
-  "pill": "Solar engineers · Jaipur, Rajasthan"
- },
- "stats": [
-  {
-   "value": 300,
-   "suffix": "+",
-   "label": "Sunny days a year in Jaipur"
+  "company": {
+    "name": "Acacia Engineering",
+    "tagline": "Sunlight to Solutions",
+    "location": "Jaipur, Rajasthan",
+    "address": "Add full office address here, Jaipur, Rajasthan",
+    "email": "info@acaciaengineering.in",
+    "phone": "+91 00000 00000"
   },
-  {
-   "value": 25,
-   "suffix": " yrs",
-   "label": "Typical panel warranty"
+  "hero": {
+    "title": "The world's sunshine, powering your future.",
+    "subtitle": "We design, install and maintain solar systems for homes, shops and factories across Jaipur, and we stay around after the panels go up.",
+    "cta": "Get a free site survey",
+    "cta2": "See our services",
+    "image": "https://images.pexels.com/photos/6876536/pexels-photo-6876536.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    "pill": "Solar engineering · Worldwide projects"
   },
-  {
-   "value": 5,
-   "suffix": " kW",
-   "label": "Smallest home system we fit"
-  },
-  {
-   "value": 100,
-   "suffix": " kW",
-   "label": "Largest factory system so far"
-  }
- ],
- "about": {
-  "eyebrow": "Who we are",
-  "title": "Built for sun-baked land, like the acacia.",
-  "image": "https://images.pexels.com/photos/38171120/pexels-photo-38171120.jpeg?auto=compress&cs=tinysrgb&w=1000",
-  "text": "The acacia thrives where little else does: strong roots, little water, full sun. That is how we work. Acacia Engineering is a Jaipur team of solar engineers who size every system to your actual bill, install it cleanly, and keep it producing.",
-  "points": [
-   "Site survey and shadow analysis before any quote",
-   "Subsidy and net-metering paperwork handled for you",
-   "Local team for service calls, not a call centre"
-  ],
   "stats": [
-   {
-    "v": "50+",
-    "l": "Systems installed"
-   },
-   {
-    "v": "2 MW",
-    "l": "Capacity planned"
-   },
-   {
-    "v": "24 hr",
-    "l": "Quote turnaround"
-   }
-  ]
- },
- "services": {
-  "eyebrow": "What we do",
-  "title": "Solar help from first visit to final switch-on",
-  "sub": "Pick a single service or let us run the whole project.",
-  "items": [
-   {
-    "icon": "layout",
-    "name": "Solar plant design",
-    "desc": "Layouts and system design shaped around your site, load and budget."
-   },
-   {
-    "icon": "sun",
-    "name": "Ground-mounted plants",
-    "desc": "Larger plants engineered for steady, dependable output."
-   },
-   {
-    "icon": "sliders",
-    "name": "Layout optimisation",
-    "desc": "Panel spacing and tilt tuned to squeeze more units from every square metre."
-   },
-   {
-    "icon": "plug",
-    "name": "Electrical engineering",
-    "desc": "Inverter, cabling, earthing and grid connection designed to code."
-   },
-   {
-    "icon": "building",
-    "name": "Mounting structures",
-    "desc": "Roof and ground structures built for Rajasthan's wind and heat."
-   },
-   {
-    "icon": "battery",
-    "name": "Battery and hybrid systems",
-    "desc": "Storage and hybrid setups so power keeps flowing after sunset."
-   },
-   {
-    "icon": "clipboard",
-    "name": "Feasibility and quotes",
-    "desc": "Site visit, yield estimate and clear payback numbers before you commit."
-   },
-   {
-    "icon": "eye",
-    "name": "Owner's advisory",
-    "desc": "An independent second opinion on vendors, designs and quotations."
-   },
-   {
-    "icon": "search",
-    "name": "Quality inspection",
-    "desc": "Checks on panels, structures and wiring before and after installation."
-   },
-   {
-    "icon": "shield",
-    "name": "Approvals and compliance",
-    "desc": "Net-metering, DISCOM and electrical safety paperwork, start to finish."
-   }
-  ]
- },
- "expertise": {
-  "eyebrow": "Our expertise",
-  "title": "Systems we know well",
-  "sub": "Different sites need different solar. These are the setups we work on most.",
-  "items": [
-   {
-    "icon": "sun",
-    "name": "Ground-mounted plants",
-    "desc": "Multi-acre plants on open land."
-   },
-   {
-    "icon": "home",
-    "name": "Rooftop solar",
-    "desc": "Homes, shops, schools and factory roofs."
-   },
-   {
-    "icon": "waves",
-    "name": "Floating solar",
-    "desc": "Panels on ponds and reservoirs that save land."
-   },
-   {
-    "icon": "sprout",
-    "name": "Solar with farming",
-    "desc": "Raised panels with crops growing underneath."
-   },
-   {
-    "icon": "battery",
-    "name": "Battery storage",
-    "desc": "Store daytime power for evening use."
-   },
-   {
-    "icon": "layers",
-    "name": "Hybrid power",
-    "desc": "Solar combined with storage or other sources."
-   }
-  ]
- },
- "process": {
-  "eyebrow": "How we work",
-  "title": "A clear path from idea to power",
-  "sub": "Six steps, with you informed at each one.",
-  "items": [
-   {
-    "name": "Site study",
-    "desc": "We visit, measure and check sun, shade and your usage."
-   },
-   {
-    "name": "Concept design",
-    "desc": "A first system outline with expected output and cost."
-   },
-   {
-    "name": "Detailed layout",
-    "desc": "Exact panel positions, with a shading check."
-   },
-   {
-    "name": "Electrical and structural",
-    "desc": "Wiring, protection and mounting drawings finalised."
-   },
-   {
-    "name": "Approvals",
-    "desc": "Permissions and paperwork filed and tracked for you."
-   },
-   {
-    "name": "Install and support",
-    "desc": "Installation, commissioning, then regular performance checks."
-   }
-  ]
- },
- "why": {
-  "eyebrow": "Why Acacia",
-  "title": "Why people choose us",
-  "sub": "Straight answers, tidy work and a team you can phone.",
-  "items": [
-   {
-    "icon": "award",
-    "name": "Experienced engineers",
-    "desc": "People who have designed and built solar, not just sold it."
-   },
-   {
-    "icon": "trend",
-    "name": "Better yield",
-    "desc": "Careful design that gets more units out of the same roof."
-   },
-   {
-    "icon": "shield",
-    "name": "Rules handled",
-    "desc": "We know the standards and approvals so you don't have to."
-   },
-   {
-    "icon": "rupee",
-    "name": "Honest pricing",
-    "desc": "Itemised quotes with no surprise additions later."
-   },
-   {
-    "icon": "buoy",
-    "name": "Quick support",
-    "desc": "A local team that answers calls and visits when needed."
-   },
-   {
-    "icon": "flag",
-    "name": "One team, start to finish",
-    "desc": "Survey, design, install and service under one roof."
-   }
+    {
+      "value": 300,
+      "suffix": "+",
+      "label": "Sunny days a year in Jaipur"
+    },
+    {
+      "value": 25,
+      "suffix": " yrs",
+      "label": "Typical panel warranty"
+    },
+    {
+      "value": 5,
+      "suffix": " kW",
+      "label": "Smallest home system we fit"
+    },
+    {
+      "value": 100,
+      "suffix": " kW",
+      "label": "Largest factory system so far"
+    }
   ],
-  "cta": {
-   "title": "Thinking about going solar?",
-   "text": "Tell us about your roof or land and we'll come back with a clear plan and price.",
-   "button": "Talk to our team",
-   "image": "https://images.pexels.com/photos/18316988/pexels-photo-18316988.jpeg?auto=compress&cs=tinysrgb&w=1600"
-  }
- },
- "industries": {
-  "eyebrow": "Industries We Serve",
-  "title": "Trusted by Industry Leaders",
-  "sub": "Delivering engineering excellence across diverse market segments and project types",
-  "items": [
-   {
-    "name": "Solar Developers",
-    "desc": "Engineering services for renewable energy developers",
-    "image": "https://images.pexels.com/photos/6876536/pexels-photo-6876536.jpeg?auto=compress&cs=tinysrgb&w=800"
-   },
-   {
-    "name": "EPC Contractors",
-    "desc": "Technical support for engineering, procurement, and construction",
-    "image": "https://images.pexels.com/photos/4320481/pexels-photo-4320481.jpeg?auto=compress&cs=tinysrgb&w=800"
-   },
-   {
-    "name": "Industrial Solar Projects",
-    "desc": "Captive power solutions for manufacturing facilities",
-    "image": "https://images.pexels.com/photos/28321970/pexels-photo-28321970.jpeg?auto=compress&cs=tinysrgb&w=800"
-   },
-   {
-    "name": "Government Renewable Projects",
-    "desc": "Technical consultancy for public sector initiatives",
-    "image": "https://images.pexels.com/photos/19205947/pexels-photo-19205947.jpeg?auto=compress&cs=tinysrgb&w=800"
-   },
-   {
-    "name": "Independent Power Producers (IPPs)",
-    "desc": "Independent Power Producers (IPPs)",
-    "image": "https://images.pexels.com/photos/35105464/pexels-photo-35105464.jpeg?auto=compress&cs=tinysrgb&w=800"
-   }
-  ],
-  "button": "View projects",
-  "stats": [
-   {
-    "value": 50,
-    "suffix": "+",
-    "label": "Projects delivered"
-   },
-   {
-    "value": 2,
-    "suffix": " MW",
-    "label": "Total capacity"
-   },
-   {
-    "value": 40,
-    "suffix": "+",
-    "label": "Happy clients"
-   },
-   {
-    "value": 5,
-    "suffix": "+",
-    "label": "Years of experience"
-   }
-  ],
-  "bg": "https://images.pexels.com/photos/35501735/pexels-photo-35501735.jpeg?auto=compress&cs=tinysrgb&w=1920"
- },
- "projects": {
-  "eyebrow": "Our work",
-  "title": "Recent work",
-  "items": [
-   {
-    "size": "5 kW",
-    "name": "Residential rooftop",
-    "detail": "Jaipur, sample project",
-    "image": "https://images.pexels.com/photos/38171120/pexels-photo-38171120.jpeg?auto=compress&cs=tinysrgb&w=900",
-    "category": "residential",
-    "summary": "A home rooftop system sized to the household bill, with net-metering paperwork handled for the owner.",
-    "specs": [
-     [
-      "System type",
-      "Rooftop, grid-connected"
-     ],
-     [
-      "Segment",
-      "Home"
-     ],
-     [
-      "Scope",
-      "Survey, design, install, approvals"
-     ]
+  "about": {
+    "eyebrow": "Who we are",
+    "title": "Built for sun-baked land, like the acacia.",
+    "image": "https://images.pexels.com/photos/38171120/pexels-photo-38171120.jpeg?auto=compress&cs=tinysrgb&w=1000",
+    "text": "The acacia thrives where little else does: strong roots, little water, full sun. That is how we work. Acacia Engineering is a Jaipur team of solar engineers who size every system to your actual bill, install it cleanly, and keep it producing.",
+    "points": [
+      "Site survey and shadow analysis before any quote",
+      "Subsidy and net-metering paperwork handled for you",
+      "Local team for service calls, not a call centre"
+    ],
+    "stats": [
+      {
+        "v": "50+",
+        "l": "Systems installed"
+      },
+      {
+        "v": "2 MW",
+        "l": "Capacity planned"
+      },
+      {
+        "v": "24 hr",
+        "l": "Quote turnaround"
+      }
     ]
-   },
-   {
-    "size": "100 kW",
-    "name": "Factory rooftop",
-    "detail": "Sitapura Industrial Area, sample project",
-    "image": "https://images.pexels.com/photos/28321970/pexels-photo-28321970.jpeg?auto=compress&cs=tinysrgb&w=900",
-    "category": "industrial",
-    "summary": "A factory roof plant sized to daytime load, cutting grid power use during working hours.",
-    "specs": [
-     [
-      "System type",
-      "Rooftop, grid-connected"
-     ],
-     [
-      "Segment",
-      "Commercial and industrial"
-     ],
-     [
-      "Scope",
-      "Design, structures, electrical, commissioning"
-     ]
-    ]
-   },
-   {
-    "size": "25 kW",
-    "name": "School campus",
-    "detail": "Jaipur, sample project",
-    "image": "https://images.pexels.com/photos/4320473/pexels-photo-4320473.jpeg?auto=compress&cs=tinysrgb&w=900",
-    "category": "institutional",
-    "summary": "A campus rooftop system that lowers daytime electricity cost for a school building.",
-    "specs": [
-     [
-      "System type",
-      "Rooftop, grid-connected"
-     ],
-     [
-      "Segment",
-      "School"
-     ],
-     [
-      "Scope",
-      "Survey, design, install, support"
-     ]
-    ]
-   }
-  ],
-  "button": "View all projects"
- },
- "contact": {
-  "eyebrow": "Get in touch",
-  "title": "Tell us about your roof.",
-  "text": "Share a few details and we will reply within one working day.",
-  "types": [
-   "Home rooftop",
-   "Commercial or industrial",
-   "Ground-mounted plant",
-   "Battery storage",
-   "Something else"
-  ]
- },
- "footer": {
-  "blurb": "Solar engineering and installation from Jaipur, Rajasthan.",
-  "newsTitle": "Get solar tips and updates",
-  "socials": [
-   {
-    "name": "LinkedIn",
-    "icon": "linkedin",
-    "url": ""
-   },
-   {
-    "name": "Instagram",
-    "icon": "instagram",
-    "url": ""
-   },
-   {
-    "name": "Facebook",
-    "icon": "facebook",
-    "url": ""
-   },
-   {
-    "name": "YouTube",
-    "icon": "youtube",
-    "url": ""
-   }
-  ]
- },
- "estimator": {
-  "eyebrow": "Quick estimate",
-  "title": "How big a solar plant do you need?",
-  "sub": "Set your average monthly electricity bill. You get a rough system size to start the conversation. Our engineers confirm it after a site visit.",
-  "label": "Monthly electricity bill",
-  "sizeLabel": "Suggested system size",
-  "areaLabel": "Shadow-free roof needed",
-  "note": "Indicative only. Assumes about ₹8 per unit and about 4.5 units per kW per day. Actual figures depend on your tariff, roof and shading.",
-  "button": "Get a free site survey",
-  "min": 1500,
-  "max": 300000,
-  "step": 500,
-  "value": 8000,
-  "ratePerUnit": 8,
-  "unitsPerKwMonth": 135,
-  "sqftPerKw": 100
- },
- "projectsPage": {
-  "pill": "Our projects · Jaipur, Rajasthan",
-  "title": "Solar plants built with care",
-  "sub": "Rooftop systems for homes, factories and school campuses across Jaipur, from the first site survey to the day the plant is switched on.",
-  "cta": "View projects",
-  "cta2": "Contact us",
-  "categories": {
-   "residential": "Residential",
-   "industrial": "Industrial",
-   "institutional": "Institutional"
   },
-  "portfolioTitle": "Recent work",
-  "capsEyebrow": "Every project",
-  "capsTitle": "What goes into every project",
-  "capsSub": "Pick a single service or let us run the whole project.",
-  "capsNames": [
-   "Solar plant design",
-   "Layout optimisation",
-   "Electrical engineering",
-   "Mounting structures",
-   "Approvals and compliance"
-  ],
-  "standEyebrow": "Why Acacia",
-  "standTitle": "Why our projects stand out",
-  "standSub": "Straight answers, tidy work and a team you can phone.",
-  "standNames": [
-   "Better yield",
-   "Honest pricing",
-   "Rules handled",
-   "Quick support"
-  ]
- }
+  "services": {
+    "eyebrow": "What we do",
+    "title": "Solar help from first visit to final switch-on",
+    "sub": "Pick a single service or let us run the whole project.",
+    "items": [
+      {
+        "icon": "layout",
+        "name": "Solar plant design",
+        "desc": "Layouts and system design shaped around your site, load and budget."
+      },
+      {
+        "icon": "sun",
+        "name": "Ground-mounted plants",
+        "desc": "Larger plants engineered for steady, dependable output."
+      },
+      {
+        "icon": "sliders",
+        "name": "Layout optimisation",
+        "desc": "Panel spacing and tilt tuned to squeeze more units from every square metre."
+      },
+      {
+        "icon": "plug",
+        "name": "Electrical engineering",
+        "desc": "Inverter, cabling, earthing and grid connection designed to code."
+      },
+      {
+        "icon": "building",
+        "name": "Mounting structures",
+        "desc": "Roof and ground structures built for Rajasthan's wind and heat."
+      },
+      {
+        "icon": "battery",
+        "name": "Battery and hybrid systems",
+        "desc": "Storage and hybrid setups so power keeps flowing after sunset."
+      },
+      {
+        "icon": "clipboard",
+        "name": "Feasibility and quotes",
+        "desc": "Site visit, yield estimate and clear payback numbers before you commit."
+      },
+      {
+        "icon": "eye",
+        "name": "Owner's advisory",
+        "desc": "An independent second opinion on vendors, designs and quotations."
+      },
+      {
+        "icon": "search",
+        "name": "Quality inspection",
+        "desc": "Checks on panels, structures and wiring before and after installation."
+      },
+      {
+        "icon": "shield",
+        "name": "Approvals and compliance",
+        "desc": "Net-metering, DISCOM and electrical safety paperwork, start to finish."
+      }
+    ]
+  },
+  "expertise": {
+    "eyebrow": "Our expertise",
+    "title": "Systems we know well",
+    "sub": "Different sites need different solar. These are the setups we work on most.",
+    "items": [
+      {
+        "icon": "sun",
+        "name": "Ground-mounted plants",
+        "desc": "Multi-acre plants on open land."
+      },
+      {
+        "icon": "home",
+        "name": "Rooftop solar",
+        "desc": "Homes, shops, schools and factory roofs."
+      },
+      {
+        "icon": "waves",
+        "name": "Floating solar",
+        "desc": "Panels on ponds and reservoirs that save land."
+      },
+      {
+        "icon": "sprout",
+        "name": "Solar with farming",
+        "desc": "Raised panels with crops growing underneath."
+      },
+      {
+        "icon": "battery",
+        "name": "Battery storage",
+        "desc": "Store daytime power for evening use."
+      },
+      {
+        "icon": "layers",
+        "name": "Hybrid power",
+        "desc": "Solar combined with storage or other sources."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "A clear path from idea to power",
+    "sub": "Six steps, with you informed at each one.",
+    "items": [
+      {
+        "name": "Site study",
+        "desc": "We visit, measure and check sun, shade and your usage."
+      },
+      {
+        "name": "Concept design",
+        "desc": "A first system outline with expected output and cost."
+      },
+      {
+        "name": "Detailed layout",
+        "desc": "Exact panel positions, with a shading check."
+      },
+      {
+        "name": "Electrical and structural",
+        "desc": "Wiring, protection and mounting drawings finalised."
+      },
+      {
+        "name": "Approvals",
+        "desc": "Permissions and paperwork filed and tracked for you."
+      },
+      {
+        "name": "Install and support",
+        "desc": "Installation, commissioning, then regular performance checks."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Acacia",
+    "title": "Why people choose us",
+    "sub": "Straight answers, tidy work and a team you can phone.",
+    "items": [
+      {
+        "icon": "award",
+        "name": "Experienced engineers",
+        "desc": "People who have designed and built solar, not just sold it."
+      },
+      {
+        "icon": "trend",
+        "name": "Better yield",
+        "desc": "Careful design that gets more units out of the same roof."
+      },
+      {
+        "icon": "shield",
+        "name": "Rules handled",
+        "desc": "We know the standards and approvals so you don't have to."
+      },
+      {
+        "icon": "rupee",
+        "name": "Honest pricing",
+        "desc": "Itemised quotes with no surprise additions later."
+      },
+      {
+        "icon": "buoy",
+        "name": "Quick support",
+        "desc": "A local team that answers calls and visits when needed."
+      },
+      {
+        "icon": "flag",
+        "name": "One team, start to finish",
+        "desc": "Survey, design, install and service under one roof."
+      }
+    ],
+    "cta": {
+      "title": "Thinking about going solar?",
+      "text": "Tell us about your roof or land and we'll come back with a clear plan and price.",
+      "button": "Talk to our team",
+      "image": "https://images.pexels.com/photos/18316988/pexels-photo-18316988.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    }
+  },
+  "industries": {
+    "eyebrow": "Industries We Serve",
+    "title": "Trusted by Industry Leaders",
+    "sub": "Delivering engineering excellence across diverse market segments and project types",
+    "items": [
+      {
+        "name": "Solar Developers",
+        "desc": "Engineering services for renewable energy developers",
+        "image": "https://images.pexels.com/photos/6876536/pexels-photo-6876536.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "name": "EPC Contractors",
+        "desc": "Technical support for engineering, procurement, and construction",
+        "image": "https://images.pexels.com/photos/4320481/pexels-photo-4320481.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "name": "Industrial Solar Projects",
+        "desc": "Captive power solutions for manufacturing facilities",
+        "image": "https://images.pexels.com/photos/28321970/pexels-photo-28321970.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "name": "Government Renewable Projects",
+        "desc": "Technical consultancy for public sector initiatives",
+        "image": "https://images.pexels.com/photos/19205947/pexels-photo-19205947.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "name": "Independent Power Producers (IPPs)",
+        "desc": "Independent Power Producers (IPPs)",
+        "image": "https://images.pexels.com/photos/35105464/pexels-photo-35105464.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ],
+    "button": "View projects",
+    "stats": [
+      {
+        "value": 50,
+        "suffix": "+",
+        "label": "Projects delivered"
+      },
+      {
+        "value": 2,
+        "suffix": " MW",
+        "label": "Total capacity"
+      },
+      {
+        "value": 40,
+        "suffix": "+",
+        "label": "Happy clients"
+      },
+      {
+        "value": 5,
+        "suffix": "+",
+        "label": "Years of experience"
+      }
+    ],
+    "bg": "https://images.pexels.com/photos/35501735/pexels-photo-35501735.jpeg?auto=compress&cs=tinysrgb&w=1920"
+  },
+  "projects": {
+    "eyebrow": "Our work",
+    "title": "Recent work",
+    "items": [
+      {
+        "size": "5 kW",
+        "name": "Residential rooftop",
+        "detail": "Jaipur, sample project",
+        "image": "https://images.pexels.com/photos/38171120/pexels-photo-38171120.jpeg?auto=compress&cs=tinysrgb&w=900",
+        "category": "residential",
+        "summary": "A home rooftop system sized to the household bill, with net-metering paperwork handled for the owner.",
+        "specs": [
+          ["System type", "Rooftop, grid-connected"],
+          ["Segment", "Home"],
+          ["Scope", "Survey, design, install, approvals"]
+        ]
+      },
+      {
+        "size": "100 kW",
+        "name": "Factory rooftop",
+        "detail": "Sitapura Industrial Area, sample project",
+        "image": "https://images.pexels.com/photos/28321970/pexels-photo-28321970.jpeg?auto=compress&cs=tinysrgb&w=900",
+        "category": "industrial",
+        "summary": "A factory roof plant sized to daytime load, cutting grid power use during working hours.",
+        "specs": [
+          ["System type", "Rooftop, grid-connected"],
+          ["Segment", "Commercial and industrial"],
+          ["Scope", "Design, structures, electrical, commissioning"]
+        ]
+      },
+      {
+        "size": "25 kW",
+        "name": "School campus",
+        "detail": "Jaipur, sample project",
+        "image": "https://images.pexels.com/photos/4320473/pexels-photo-4320473.jpeg?auto=compress&cs=tinysrgb&w=900",
+        "category": "institutional",
+        "summary": "A campus rooftop system that lowers daytime electricity cost for a school building.",
+        "specs": [
+          ["System type", "Rooftop, grid-connected"],
+          ["Segment", "School"],
+          ["Scope", "Survey, design, install, support"]
+        ]
+      }
+    ],
+    "button": "View all projects"
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Tell us about your roof.",
+    "text": "Share a few details and we will reply within one working day.",
+    "types": [
+      "Home rooftop",
+      "Commercial or industrial",
+      "Ground-mounted plant",
+      "Battery storage",
+      "Something else"
+    ]
+  },
+  "footer": {
+    "blurb": "Expert solar engineering and installation services for projects worldwide.",
+    "newsTitle": "Get solar tips and updates",
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "icon": "linkedin",
+        "url": ""
+      },
+      {
+        "name": "Instagram",
+        "icon": "instagram",
+        "url": ""
+      },
+      {
+        "name": "Facebook",
+        "icon": "facebook",
+        "url": ""
+      },
+      {
+        "name": "YouTube",
+        "icon": "youtube",
+        "url": ""
+      }
+    ]
+  },
+  "estimator": {
+    "eyebrow": "Quick estimate",
+    "title": "How big a solar plant do you need?",
+    "sub": "Set your average monthly electricity bill. You get a rough system size to start the conversation. Our engineers confirm it after a site visit.",
+    "label": "Monthly electricity bill",
+    "sizeLabel": "Suggested system size",
+    "areaLabel": "Shadow-free roof needed",
+    "note": "Indicative only. Assumes about ₹8 per unit and about 4.5 units per kW per day. Actual figures depend on your tariff, roof and shading.",
+    "button": "Get a free site survey",
+    "min": 1500,
+    "max": 300000,
+    "step": 500,
+    "value": 8000,
+    "ratePerUnit": 8,
+    "unitsPerKwMonth": 135,
+    "sqftPerKw": 100
+  },
+  "projectsPage": {
+    "pill": "Our projects · Worldwide",
+    "title": "Solar plants built with care",
+    "sub": "Rooftop systems for homes, factories and school campuses across Jaipur, from the first site survey to the day the plant is switched on.",
+    "cta": "View projects",
+    "cta2": "Contact us",
+    "categories": {
+      "residential": "Residential",
+      "industrial": "Industrial",
+      "institutional": "Institutional"
+    },
+    "portfolioTitle": "Recent work",
+    "capsEyebrow": "Every project",
+    "capsTitle": "What goes into every project",
+    "capsSub": "Pick a single service or let us run the whole project.",
+    "capsNames": [
+      "Solar plant design",
+      "Layout optimisation",
+      "Electrical engineering",
+      "Mounting structures",
+      "Approvals and compliance"
+    ],
+    "standEyebrow": "Why Acacia",
+    "standTitle": "Why our projects stand out",
+    "standSub": "Straight answers, tidy work and a team you can phone.",
+    "standNames": [
+      "Better yield",
+      "Honest pricing",
+      "Rules handled",
+      "Quick support"
+    ]
+  }
 }
